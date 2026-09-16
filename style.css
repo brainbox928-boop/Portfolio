@@ -1,0 +1,410 @@
+/* =================================================================
+   PORTFOLIO STYLESHEET
+   Modern dark/light slate theme. Colors are defined as CSS variables
+   below — edit the :root block to re-theme the entire site.
+   ================================================================= */
+
+:root {
+  /* Slate dark palette */
+  --slate-950: #0b1120;
+  --slate-900: #0f172a;
+  --slate-850: #141c2f;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-100: #f1f5f9;
+  --slate-50:  #f8fafc;
+
+  /* Accent (light blue / cyan) */
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
+  --accent-soft: rgba(56, 189, 248, 0.15);
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --section-padding-y: 6rem;
+}
+
+/* =================================================================
+   BASE / TYPOGRAPHY
+   ================================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--slate-950);
+  color: var(--slate-300);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--slate-50);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-padding {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+.section-alt {
+  background-color: var(--slate-900);
+}
+
+.section-eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-heading {
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 2.75rem);
+}
+
+.section-subheading {
+  color: var(--slate-400);
+  max-width: 640px;
+  font-size: 1.05rem;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--accent) 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Reusable accent button */
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--slate-950);
+  font-weight: 600;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+  color: var(--slate-950);
+}
+
+/* =================================================================
+   1. NAVIGATION
+   ================================================================= */
+#mainNav {
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--slate-800);
+  padding: 0.85rem 0;
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--slate-50) !important;
+}
+
+.brand-accent {
+  color: var(--accent);
+}
+
+#mainNav .nav-link {
+  color: var(--slate-300);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+  color: var(--accent);
+}
+
+/* =================================================================
+   2. HERO SECTION
+   ================================================================= */
+.hero-section {
+  min-height: 90vh;
+  background:
+    radial-gradient(circle at 80% 20%, var(--accent-soft) 0%, transparent 45%),
+    linear-gradient(180deg, var(--slate-950) 0%, var(--slate-900) 100%);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.hero-heading {
+  font-size: clamp(2.25rem, 4vw + 1rem, 3.75rem);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtext {
+  color: var(--slate-400);
+  font-size: 1.1rem;
+  max-width: 640px;
+  margin: 0 auto 2.25rem;
+}
+
+@media (min-width: 992px) {
+  .hero-subtext {
+    margin-left: 0;
+  }
+}
+
+/* =================================================================
+   ABOUT SECTION
+   ================================================================= */
+.about-photo {
+  border-radius: 1.5rem;
+  border: 1px solid var(--slate-800);
+}
+
+.about-stats {
+  border-top: 1px solid var(--slate-800);
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.stat-number {
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 0.15rem;
+}
+
+.stat-label {
+  color: var(--slate-400);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* =================================================================
+   3. MODULAR AUDIENCE TABS (FOCUS AREAS)
+   ================================================================= */
+.focus-tabs {
+  border-bottom: 1px solid var(--slate-800);
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.focus-tabs .nav-link {
+  color: var(--slate-400);
+  font-weight: 600;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: 0.85rem 1.25rem;
+  background: transparent;
+}
+
+.focus-tabs .nav-link:hover {
+  color: var(--slate-100);
+}
+
+.focus-tabs .nav-link.active {
+  color: var(--accent);
+  background: transparent;
+  border-bottom-color: var(--accent);
+}
+
+.focus-tab-content {
+  background-color: var(--slate-850);
+  border: 1px solid var(--slate-800);
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  padding: 2.5rem;
+}
+
+.pane-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.25rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.6rem;
+  color: var(--slate-300);
+}
+
+.feature-list i {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+/* =================================================================
+   4. MARKETPLACE SHOWCASE
+   ================================================================= */
+.marketplace-section {
+  background:
+    radial-gradient(circle at 15% 85%, var(--accent-soft) 0%, transparent 50%),
+    var(--slate-900);
+  border-top: 1px solid var(--slate-800);
+  border-bottom: 1px solid var(--slate-800);
+}
+
+.badge-progress {
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.9rem;
+  border-radius: 50rem;
+}
+
+.progress-item span {
+  font-size: 0.9rem;
+  color: var(--slate-300);
+}
+
+.progress {
+  background-color: var(--slate-800);
+  height: 0.6rem;
+  border-radius: 50rem;
+}
+
+.progress-bar {
+  background-color: var(--accent);
+}
+
+/* =================================================================
+   5. PROJECT GRID / CARDS
+   ================================================================= */
+.project-card {
+  background-color: var(--slate-850);
+  border: 1px solid var(--slate-800);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 35px -15px rgba(56, 189, 248, 0.25);
+}
+
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--slate-800);
+}
+
+.project-card .card-title {
+  color: var(--slate-50);
+}
+
+/* =================================================================
+   6. DONATION SECTION
+   ================================================================= */
+.donate-section {
+  background-color: var(--slate-900);
+}
+
+.btn-donate {
+  font-weight: 600;
+  border-radius: 0.65rem;
+  border: 1px solid var(--slate-700);
+  color: var(--slate-100);
+  background-color: var(--slate-850);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-donate:hover {
+  transform: translateY(-3px);
+  color: var(--slate-50);
+}
+
+.btn-coffee:hover { border-color: #f59e0b; color: #f59e0b; }
+.btn-paypal:hover { border-color: #0ea5e9; color: #0ea5e9; }
+.btn-crypto:hover { border-color: #f7931a; color: #f7931a; }
+
+/* =================================================================
+   7. CONTACT & FOOTER
+   ================================================================= */
+.footer-section {
+  background-color: var(--slate-950);
+  border-top: 1px solid var(--slate-800);
+}
+
+.contact-form .form-label {
+  color: var(--slate-300);
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  background-color: var(--slate-850);
+  border: 1px solid var(--slate-700);
+  color: var(--slate-100);
+}
+
+.contact-form .form-control:focus {
+  background-color: var(--slate-850);
+  border-color: var(--accent);
+  color: var(--slate-100);
+  box-shadow: 0 0 0 0.2rem var(--accent-soft);
+}
+
+.contact-form .form-control::placeholder {
+  color: var(--slate-600);
+}
+
+.social-icons .social-icon-link {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--slate-700);
+  color: var(--slate-100);
+  font-size: 1.25rem;
+  background-color: var(--slate-850);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--accent);
+  color: var(--slate-950);
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  border-color: var(--slate-800);
+  margin: 2.5rem 0 1.5rem;
+}
+
+.footer-copy {
+  color: var(--slate-600);
+  font-size: 0.9rem;
+}
