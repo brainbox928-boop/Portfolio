@@ -42,6 +42,10 @@ body {
   line-height: 1.7;
 }
 
+.text-body-secondary {
+  color: var(--slate-400) !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--slate-50);
@@ -141,12 +145,18 @@ a {
   align-items: center;
 }
 
-.brand-logo {
-  display: block;
-  width: auto;
-  height: 48px;
-  max-width: 180px;
-  object-fit: contain;
+.brand-wordmark {
+  gap: 0.65rem;
+  letter-spacing: 0.01em;
+}
+
+.brand-mark {
+  color: var(--accent);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.12em;
+  line-height: 1;
 }
 
 .brand-accent {
