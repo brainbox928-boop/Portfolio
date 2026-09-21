@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Front-End Developer &amp; UI Architect</title>
-  <meta name="description" content="Portfolio of [Your Name] — Front-End Developer & UI Architect specializing in private, government, and freelance web solutions.">
+  <title>Brainbox_X | Front-End Developer &amp; UI Architect</title>
+  <meta name="description" content="Portfolio of Brainbox_X — Front-End Developer & UI Architect specializing in private, government, and freelance web solutions.">
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,9 @@
   <!-- ============================================= -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#home">Your<span class="brand-accent">Name</span></a>
+      <a class="navbar-brand" href="#home" aria-label="Brainbox_X home">
+        <img src="Image/Brainboxlogo1.jpg.jpeg" alt="Brainbox_X logo" class="brand-logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
         aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,6 +37,7 @@
         <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#focus-areas">Focus Areas</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
@@ -79,21 +82,22 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-5 text-center">
           <!-- TODO: Replace with your headshot or brand image -->
-          <img src="https://via.placeholder.com/420x420?text=Your+Photo" alt="Portrait of Your Name"
+          <img src="Image/Xlogo1.jpg.jpeg" alt="Portrait of Brainbox_X"
             class="img-fluid about-photo">
         </div>
         <div class="col-lg-7">
           <p class="section-eyebrow">About Me</p>
-          <h2 class="section-heading mb-4">A short line about who you are</h2>
+          <h2 class="section-heading mb-4">Frontend Developer building high-performance web applications.</h2>
           <!-- TODO: Replace with your bio: background, skills, mission statement -->
           <p class="text-body-secondary mb-3">
-            Placeholder bio copy. Describe your background, years of experience, technical stack,
-            and what drives your work as a developer. Mention your specialization in building
-            deployable, client-ready digital products across multiple sectors.
+            Frontend Developer building high-performance web applications with React and TypeScript.
+            Focused on turning complex designs into clean, accessible, and pixel-perfect code.
           </p>
           <p class="text-body-secondary mb-4">
-            Placeholder secondary paragraph. Highlight certifications, notable achievements, or your
-            development philosophy (performance, accessibility, maintainability).
+            I bridge the gap between design and engineering. I craft immersive, fluid user interfaces
+            with zero compromise on performance and user experience. I also teach brilliant minds
+            who are ready to become professional frontend software engineers through a focused
+            16-20-week learning and mentorship program.
           </p>
           <div class="row g-3 about-stats">
             <div class="col-6 col-md-3">
@@ -101,17 +105,54 @@
               <p class="stat-label">Ready Projects</p>
             </div>
             <div class="col-6 col-md-3">
-              <h3 class="stat-number">X</h3>
+              <h3 class="stat-number">3+</h3>
               <p class="stat-label">Years Experience</p>
             </div>
             <div class="col-6 col-md-3">
-              <h3 class="stat-number">X</h3>
+              <h3 class="stat-number">20+</h3>
               <p class="stat-label">Clients Served</p>
             </div>
             <div class="col-6 col-md-3">
-              <h3 class="stat-number">X</h3>
+              <h3 class="stat-number">15+</h3>
               <p class="stat-label">Technologies</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SKILLS & TECH STACK -->
+  <!-- ============================================= -->
+  <section id="skills" class="section-padding skills-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <p class="section-eyebrow">How I Build</p>
+          <h2 class="section-heading mb-3">Skills &amp; Tech Stack</h2>
+          <p class="section-subheading mb-0">
+            A modern frontend toolkit for translating ambitious ideas into accessible,
+            responsive, and production-ready digital experiences.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="skills-list" aria-label="Frontend technologies and capabilities">
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">Bootstrap</span>
+            <span class="skill-chip">Tailwind CSS</span>
+            <span class="skill-chip">Sass</span>
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">REST APIs</span>
+            <span class="skill-chip">Accessibility</span>
+            <span class="skill-chip">Responsive Design</span>
+            <span class="skill-chip">Testing</span>
+            <span class="skill-chip">Performance Optimization</span>
           </div>
         </div>
       </div>
@@ -127,7 +168,7 @@
         <p class="section-eyebrow">Who I Work With</p>
         <h2 class="section-heading">Focus Areas</h2>
         <p class="section-subheading mx-auto">
-          Tailored development priorities depending on who I'm building for.
+          High-performance frontend solutions for ambitious businesses and independent clients.
         </p>
       </div>
 
@@ -137,12 +178,6 @@
           <button class="nav-link active" id="private-tab" data-bs-toggle="tab" data-bs-target="#private-pane"
             type="button" role="tab" aria-controls="private-pane" aria-selected="true">
             <i class="fa-solid fa-briefcase me-2"></i>Private Business
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="gov-tab" data-bs-toggle="tab" data-bs-target="#gov-pane"
-            type="button" role="tab" aria-controls="gov-pane" aria-selected="false">
-            <i class="fa-solid fa-landmark me-2"></i>Government Contracts
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -158,17 +193,17 @@
         <div class="tab-pane fade show active" id="private-pane" role="tabpanel" aria-labelledby="private-tab" tabindex="0">
           <div class="row g-4 align-items-center">
             <div class="col-lg-6">
-              <h3 class="pane-heading">Speed. UI/UX. Responsiveness.</h3>
-              <!-- TODO: Replace with your private-sector value proposition -->
+              <h3 class="pane-heading">Digital experiences built to move your business forward.</h3>
               <p class="text-body-secondary">
-                Placeholder copy: For private businesses, I prioritize lightning-fast load times,
-                polished user interfaces, and fully responsive layouts that convert visitors into
-                customers across every device.
+                I help private businesses turn ideas into fast, credible, and conversion-focused
+                digital experiences. From polished marketing sites to product interfaces, I combine
+                thoughtful UX with clean React and TypeScript implementation so your website feels
+                as professional as the business behind it.
               </p>
               <ul class="feature-list">
-                <li><i class="fa-solid fa-check-circle"></i> Optimized Core Web Vitals</li>
-                <li><i class="fa-solid fa-check-circle"></i> Conversion-focused UI/UX design</li>
-                <li><i class="fa-solid fa-check-circle"></i> Mobile-first responsive builds</li>
+                <li><i class="fa-solid fa-check-circle"></i> High-performance, responsive websites</li>
+                <li><i class="fa-solid fa-check-circle"></i> Conversion-focused UI and user journeys</li>
+                <li><i class="fa-solid fa-check-circle"></i> Accessible, maintainable frontend architecture</li>
               </ul>
             </div>
             <div class="col-lg-6">
@@ -178,45 +213,21 @@
           </div>
         </div>
 
-        <!-- Government Contracts Pane -->
-        <div class="tab-pane fade" id="gov-pane" role="tabpanel" aria-labelledby="gov-tab" tabindex="0">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-6">
-              <h3 class="pane-heading">Semantic HTML. WCAG Accessibility. Clean Structure.</h3>
-              <!-- TODO: Replace with your government-sector value proposition -->
-              <p class="text-body-secondary">
-                Placeholder copy: For government contracts, I build with strict semantic HTML5,
-                WCAG 2.1 AA accessibility compliance, and maintainable, auditable code structures
-                suited for long-term institutional use.
-              </p>
-              <ul class="feature-list">
-                <li><i class="fa-solid fa-check-circle"></i> WCAG 2.1 AA compliant markup</li>
-                <li><i class="fa-solid fa-check-circle"></i> Screen-reader &amp; keyboard tested</li>
-                <li><i class="fa-solid fa-check-circle"></i> Documented, auditable codebase</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <!-- TODO: Replace with a relevant screenshot / mockup -->
-              <img src="https://via.placeholder.com/560x360?text=Government+Contracts+Showcase" alt="Government contracts showcase placeholder" class="img-fluid rounded-4 shadow-lg">
-            </div>
-          </div>
-        </div>
-
         <!-- Freelance Clients Pane -->
         <div class="tab-pane fade" id="freelance-pane" role="tabpanel" aria-labelledby="freelance-tab" tabindex="0">
           <div class="row g-4 align-items-center">
             <div class="col-lg-6">
-              <h3 class="pane-heading">Turnkey Deployment. Landing Pages.</h3>
-              <!-- TODO: Replace with your freelance-sector value proposition -->
+              <h3 class="pane-heading">From rough idea to launch-ready website.</h3>
               <p class="text-body-secondary">
-                Placeholder copy: For freelance clients, I deliver turnkey websites and landing
-                pages ready for immediate deployment — fast turnaround, transparent pricing, and
-                minimal back-and-forth.
+                Need a reliable frontend partner without the overhead of a large agency? I deliver
+                focused, launch-ready websites and interfaces with clear communication, practical
+                scope, and attention to every detail. Whether you have a finished design or only
+                a strong idea, I can turn it into a responsive experience you are proud to share.
               </p>
               <ul class="feature-list">
-                <li><i class="fa-solid fa-check-circle"></i> Rapid turnaround landing pages</li>
-                <li><i class="fa-solid fa-check-circle"></i> Ready-to-launch deployment packages</li>
-                <li><i class="fa-solid fa-check-circle"></i> Flexible, budget-friendly scopes</li>
+                <li><i class="fa-solid fa-check-circle"></i> Landing pages and websites built for launch</li>
+                <li><i class="fa-solid fa-check-circle"></i> Clear milestones and straightforward communication</li>
+                <li><i class="fa-solid fa-check-circle"></i> Flexible scopes for startups and growing brands</li>
               </ul>
             </div>
             <div class="col-lg-6">
@@ -580,7 +591,7 @@
 
       <hr class="footer-divider">
       <p class="text-center footer-copy mb-0">
-        &copy; <span id="year"></span> Your Name. All rights reserved.
+        &copy; <span id="year"></span> Brainbox_X. All rights reserved.
       </p>
     </div>
   </footer>
