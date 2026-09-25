@@ -29,7 +29,7 @@ own content:
 - About photo, bio paragraphs, stats
 - Focus area copy/images for Private, Government, Freelance tabs
 - Marketplace description, architecture notes, progress percentages
-- 10 project cards: image, title, description, live link, code link
+- 10 project cards: image, title, description, and live link
 - Donation platform links (Buy Me a Coffee, PayPal, Crypto wallet)
 - Contact form action endpoint (e.g. connect to Formspree, Netlify Forms, or your own backend)
 - Social links: WhatsApp, Telegram, GitHub, LinkedIn hrefs
