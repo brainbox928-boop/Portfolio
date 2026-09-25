@@ -84,6 +84,13 @@ a {
   font-size: 1.05rem;
 }
 
+.page-banner {
+  background:
+    radial-gradient(circle at 85% 20%, var(--accent-soft) 0%, transparent 45%),
+    var(--slate-900);
+  border-bottom: 1px solid var(--slate-800);
+}
+
 .text-gradient {
   background: linear-gradient(90deg, var(--accent) 0%, #818cf8 100%);
   -webkit-background-clip: text;
