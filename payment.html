@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support | Brainbox_X</title>
+  <meta name="description" content="Support Brainbox_X through cryptocurrency or gift card contributions.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-wordmark" href="index.html#home" aria-label="Brainbox_X home"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Brainbox<span class="brand-accent">_X</span></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu"><ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#focus-areas">Focus Areas</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="payment.html" aria-current="page">Donate</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html#contact">Contact</a></li>
+      </ul></div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-banner section-padding"><div class="container text-center"><p class="section-eyebrow">Support This Work</p><h1 class="section-heading mb-3">Choose Your Way to Support</h1><p class="section-subheading mx-auto">Your contribution helps keep practical, accessible frontend work moving forward. Payments are reviewed manually, so please double-check every address before sending.</p></div></section>
+
+    <section id="donate" class="section-padding donate-section">
+      <div class="container">
+        <div class="payment-choice mb-5"><label for="paymentMethod" class="form-label">Payment option</label><select id="paymentMethod" class="form-select form-select-lg"><option value="crypto" selected>Cryptocurrency</option><option value="gift-card">Gift card or e-gift code</option></select></div>
+        <div id="cryptoPaymentOption" class="payment-option">
+        <div class="payment-heading d-flex align-items-center gap-3 mb-4"><span class="payment-icon" aria-hidden="true">₿</span><div><p class="section-eyebrow mb-1">Crypto support</p><h2 class="h2 mb-0">Scan, send, and share your proof</h2></div></div>
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4"><article class="crypto-card h-100"><div class="crypto-qr-wrap"><img src="Image/Bitcoin%20QR%20code.jpg" alt="Bitcoin wallet QR code" class="crypto-qr"></div><div class="crypto-card-body"><div class="d-flex justify-content-between align-items-center mb-2"><h3 class="h5 mb-0">Bitcoin</h3><span class="payment-badge">BTC</span></div><label class="form-label" for="bitcoinAddress">Wallet address</label><div class="copy-field"><input id="bitcoinAddress" class="form-control" value="3DfMVLhNfUAQrhRSxy341KVsJnQpuDQx2o" readonly><button type="button" class="btn btn-copy" data-copy-value="3DfMVLhNfUAQrhRSxy341KVsJnQpuDQx2o" aria-label="Copy Bitcoin address"><i class="fa-regular fa-copy" aria-hidden="true"></i></button></div></div></article></div>
+          <div class="col-lg-4"><article class="crypto-card h-100"><div class="crypto-qr-wrap"><img src="Image/ETHERUM%20QR%20CODE.JPG" alt="Ethereum wallet QR code" class="crypto-qr"></div><div class="crypto-card-body"><div class="d-flex justify-content-between align-items-center mb-2"><h3 class="h5 mb-0">Ethereum</h3><span class="payment-badge">ETH</span></div><label class="form-label" for="ethereumAddress">Wallet address</label><div class="copy-field"><input id="ethereumAddress" class="form-control" value="0xe968AE33B8a46f45cec836eFe852Ce7267f47a31" readonly><button type="button" class="btn btn-copy" data-copy-value="0xe968AE33B8a46f45cec836eFe852Ce7267f47a31" aria-label="Copy Ethereum address"><i class="fa-regular fa-copy" aria-hidden="true"></i></button></div></div></article></div>
+          <div class="col-lg-4"><article class="crypto-card h-100"><div class="crypto-qr-wrap"><img src="Image/Litecoin%20QR%20code.jpg" alt="Litecoin wallet QR code" class="crypto-qr"></div><div class="crypto-card-body"><div class="d-flex justify-content-between align-items-center mb-2"><h3 class="h5 mb-0">Litecoin</h3><span class="payment-badge">LTC</span></div><label class="form-label" for="litecoinAddress">Wallet address</label><div class="copy-field"><input id="litecoinAddress" class="form-control" value="MMuJ4C35oTyEF67xrdEk9CmF9npzUPDMyY" readonly><button type="button" class="btn btn-copy" data-copy-value="MMuJ4C35oTyEF67xrdEk9CmF9npzUPDMyY" aria-label="Copy Litecoin address"><i class="fa-regular fa-copy" aria-hidden="true"></i></button></div></div></article></div>
+        </div>
+
+        <div class="crypto-proof-panel mt-5"><div><p class="section-eyebrow mb-1">After a crypto payment</p><h2 class="h4 mb-2">Help us match your transfer 🔐</h2><p class="text-body-secondary mb-0">Upload a screenshot or receipt showing the transaction hash, amount, and network. Do not upload wallet passwords or seed phrases.</p></div><form class="payment-form crypto-proof-form" action="#" method="POST" enctype="multipart/form-data"><div class="row g-3 align-items-end"><div class="col-md-4"><label for="cryptoName" class="form-label">Your name</label><input type="text" class="form-control" id="cryptoName" name="name" required></div><div class="col-md-3"><label for="cryptoNetwork" class="form-label">Network</label><select class="form-select" id="cryptoNetwork" name="network" required><option value="" selected disabled>Choose</option><option>Bitcoin</option><option>Ethereum</option><option>Litecoin</option></select></div><div class="col-md-5"><label for="cryptoEvidence" class="form-label">Payment evidence</label><input type="file" class="form-control" id="cryptoEvidence" name="payment_evidence" accept="image/*,.pdf" required></div><div class="col-12"><button type="submit" class="btn btn-outline-accent"><i class="fa-solid fa-upload me-2" aria-hidden="true"></i>Submit Payment Evidence</button></div></div></form></div>
+        </div>
+
+        <div id="giftCardPaymentOption" class="payment-option" hidden>
+        <div class="manual-payment-panel"><div class="row g-5">
+          <div class="col-lg-5"><p class="section-eyebrow">Gift cards</p><h2 class="section-heading h2 mb-3">Send a card, support a builder 🎁</h2><p class="text-body-secondary">Physical and e-gift cards are welcome. Take clear, readable photos in good light so the card and receipt can be reviewed quickly.</p><ol class="payment-steps"><li><span>01</span>Photograph the front and back of the card.</li><li><span>02</span>Include the purchase receipt and card details.</li><li><span>03</span>Submit the form for manual review.</li></ol><div class="payment-note"><i class="fa-solid fa-shield-halved me-2" aria-hidden="true"></i>Only send details through a secure form endpoint you trust. This static page needs a form service or backend before it can receive uploads.</div></div>
+          <div class="col-lg-7"><form class="payment-form" action="#" method="POST" enctype="multipart/form-data"><div class="row g-3"><div class="col-md-6"><label for="giftName" class="form-label">Your name</label><input type="text" class="form-control" id="giftName" name="name" required></div><div class="col-md-6"><label for="giftEmail" class="form-label">Email address</label><input type="email" class="form-control" id="giftEmail" name="email" required></div><div class="col-md-6"><label for="giftType" class="form-label">Card type</label><select class="form-select" id="giftType" name="card_type" required><option value="" selected disabled>Choose one</option><option>Physical gift card</option><option>Electronic gift card</option></select></div><div class="col-md-6"><label for="giftBrand" class="form-label">Card brand</label><input type="text" class="form-control" id="giftBrand" name="card_brand" placeholder="e.g. Amazon, Apple" required></div><div class="col-md-6"><label for="giftNumber" class="form-label">Card number or e-gift code</label><input type="text" class="form-control" id="giftNumber" name="card_number" required></div><div class="col-md-6"><label for="giftExpiry" class="form-label">Expiry date <span class="text-body-secondary">(if shown)</span></label><input type="text" class="form-control" id="giftExpiry" name="expiry_date" placeholder="MM / YY"></div><div class="col-md-4"><label for="cardFront" class="form-label">Card front photo</label><input type="file" class="form-control" id="cardFront" name="card_front" accept="image/*" required></div><div class="col-md-4"><label for="cardBack" class="form-label">Card back photo</label><input type="file" class="form-control" id="cardBack" name="card_back" accept="image/*" required></div><div class="col-md-4"><label for="cardReceipt" class="form-label">Purchase receipt</label><input type="file" class="form-control" id="cardReceipt" name="receipt" accept="image/*,.pdf" required></div><div class="col-12"><label for="giftNotes" class="form-label">Notes</label><textarea class="form-control" id="giftNotes" name="notes" rows="3" placeholder="Optional: anything helpful about this gift card"></textarea></div><div class="col-12"><button type="submit" class="btn btn-accent btn-lg"><i class="fa-solid fa-paper-plane me-2" aria-hidden="true"></i>Submit Gift Card Details</button></div></div></form></div>
+        </div></div>
+
+      </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer-section section-padding"><div class="container"><p class="text-center footer-copy mb-0">&copy; <span id="year"></span> Brainbox_X. All rights reserved.</p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

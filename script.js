@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const projectImages = document.querySelectorAll(".project-image-strip img");
+  const projectImages = document.querySelectorAll(".project-image-strip img, .crypto-qr");
   let lastFocusedImage = null;
 
   const lightbox = document.createElement("div");
@@ -78,4 +78,66 @@ document.addEventListener("DOMContentLoaded", () => {
       closeLightbox();
     }
   });
+
+  document.querySelectorAll("[data-copy-value]").forEach((copyButton) => {
+    copyButton.addEventListener("click", async () => {
+      const value = copyButton.dataset.copyValue;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          const temporaryInput = document.createElement("input");
+          temporaryInput.value = value;
+          document.body.appendChild(temporaryInput);
+          temporaryInput.select();
+          document.execCommand("copy");
+          temporaryInput.remove();
+        }
+      } catch (error) {
+        return;
+      }
+      const originalLabel = copyButton.getAttribute("aria-label");
+      copyButton.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i>';
+      copyButton.setAttribute("aria-label", "Address copied");
+      setTimeout(() => {
+        copyButton.innerHTML = '<i class="fa-regular fa-copy" aria-hidden="true"></i>';
+        copyButton.setAttribute("aria-label", originalLabel);
+      }, 1600);
+    });
+  });
+
+  const giftCardForm = document.querySelector(".manual-payment-panel .payment-form");
+  if (giftCardForm) {
+    document.getElementById("giftName")?.closest(".col-md-6")?.remove();
+    document.getElementById("giftEmail")?.closest(".col-md-6")?.remove();
+    giftCardForm.insertAdjacentHTML("afterbegin", '<div class="row g-3 supporter-contact-fields mb-3"><div class="col-md-6"><label for="giftFirstName" class="form-label">First name</label><input type="text" class="form-control" id="giftFirstName" name="first_name" required></div><div class="col-md-6"><label for="giftLastName" class="form-label">Last name</label><input type="text" class="form-control" id="giftLastName" name="last_name" required></div><div class="col-md-6"><label for="giftPhone" class="form-label">Phone number</label><input type="tel" class="form-control" id="giftPhone" name="phone" placeholder="+234..." required></div><div class="col-md-6"><label for="giftEmail" class="form-label">Email address</label><input type="email" class="form-control" id="giftEmail" name="email" required></div></div>');
+  }
+
+  const cryptoProofForm = document.querySelector(".crypto-proof-form");
+  if (cryptoProofForm) {
+    document.getElementById("cryptoName")?.closest(".col-md-4")?.remove();
+    cryptoProofForm.insertAdjacentHTML("afterbegin", '<div class="row g-3 supporter-contact-fields mb-3"><div class="col-md-6"><label for="cryptoFirstName" class="form-label">First name</label><input type="text" class="form-control" id="cryptoFirstName" name="first_name" required></div><div class="col-md-6"><label for="cryptoLastName" class="form-label">Last name</label><input type="text" class="form-control" id="cryptoLastName" name="last_name" required></div><div class="col-md-6"><label for="cryptoPhone" class="form-label">Phone number</label><input type="tel" class="form-control" id="cryptoPhone" name="phone" placeholder="+234..." required></div><div class="col-md-6"><label for="cryptoEmail" class="form-label">Email address</label><input type="email" class="form-control" id="cryptoEmail" name="email" required></div></div>');
+  }
+
+  const paymentMethod = document.getElementById("paymentMethod");
+  const cryptoPaymentOption = document.getElementById("cryptoPaymentOption");
+  const giftCardPaymentOption = document.getElementById("giftCardPaymentOption");
+
+  if (paymentMethod && cryptoPaymentOption && giftCardPaymentOption) {
+    const setPaymentOptionState = (panel, isActive) => {
+      panel.hidden = !isActive;
+      panel.querySelectorAll("input, select, textarea, button").forEach((control) => {
+        control.disabled = !isActive;
+      });
+    };
+
+    setPaymentOptionState(cryptoPaymentOption, true);
+    setPaymentOptionState(giftCardPaymentOption, false);
+
+    paymentMethod.addEventListener("change", () => {
+      const giftCardSelected = paymentMethod.value === "gift-card";
+      setPaymentOptionState(cryptoPaymentOption, !giftCardSelected);
+      setPaymentOptionState(giftCardPaymentOption, giftCardSelected);
+    });
+  }
 });
