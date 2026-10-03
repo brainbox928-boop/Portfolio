@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="projects-page">
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand brand-wordmark" href="index.html#home" aria-label="Brainbox_X home">
@@ -36,16 +36,79 @@
   </nav>
 
   <main>
-    <section class="page-banner section-padding">
-      <div class="container text-center">
-        <p class="section-eyebrow">Portfolio</p>
-        <h1 class="section-heading mb-3">Ready-to-Deploy Projects</h1>
-        <p class="section-subheading mx-auto">A selection of practical digital experiences built for real businesses, organizations, and clients.</p>
+    <section class="page-banner section-padding project-page-hero">
+      <div class="container">
+        <div class="row align-items-center g-4 g-xl-5">
+          <div class="col-lg-7">
+            <p class="section-eyebrow"><i class="fa-solid fa-sparkles me-2" aria-hidden="true"></i>Portfolio &middot; Built for business</p>
+            <h1 class="project-page-title mb-3">Ready-to-Deploy <span class="text-gradient">Websites</span></h1>
+            <p class="section-subheading project-page-intro mb-4">Explore practical website concepts for businesses, schools, and organizations. Preview each project, then get in touch to make one yours.</p>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <a href="#project-gallery" class="btn btn-accent btn-lg">Explore the projects <i class="fa-solid fa-arrow-down ms-2" aria-hidden="true"></i></a>
+              <a href="contact.html#contact" class="project-text-link">Have a project in mind? <span>Let’s talk</span></a>
+            </div>
+            <div class="project-hero-highlights mt-4">
+              <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Project previews</span>
+              <span><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Ready for modification</span>
+              <span><i class="fa-solid fa-store" aria-hidden="true"></i> Available to purchase</span>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <aside class="project-availability">
+              <div class="project-availability-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+              <p class="section-eyebrow mb-2">A growing collection</p>
+              <h2 class="h4 mb-3">12 projects showcased. More to come.</h2>
+              <p class="mb-3">These are the first 12 projects featured in my portfolio—not the complete collection. Each is a ready-to-deploy website starting point, available for purchase and modification for an interested business or organization.</p>
+              <p class="project-production-note mb-0">Before production use, sample content should be replaced and any required booking, payment, messaging, email, or account services connected and tested.</p>
+              <a href="contact.html#contact" class="btn btn-sm btn-outline-light mt-4">Contact me to discuss purchasing a project <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i></a>
+            </aside>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section-padding pt-0" id="projects">
       <div class="container">
+        <section class="featured-case-study featured-school-project" id="school-website-proposal" aria-labelledby="school-website-proposal-title">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <div class="project-image-strip case-study-gallery">
+                <img src="Image/School-website-proposal-1.jpg" class="card-img-top" alt="Lagoon Crest Schools proposal homepage preview">
+                <img src="Image/school-website-proposal-2.jpg" class="card-img-top" alt="Lagoon Crest Schools proposal portal preview">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <p class="section-eyebrow">Featured Project &middot; #12 School Website Proposal</p>
+              <h2 class="section-heading mb-3" id="school-website-proposal-title">Lagoon Crest Schools</h2>
+              <p class="case-study-summary">A school website and management-portal prototype bringing school information, results, fees, grading, and announcements into one experience.</p>
+
+              <div class="case-study-details">
+                <section>
+                  <h3>Proposal</h3>
+                  <p>Organizes school, academic, admissions, and news information alongside student and parent-facing portal concepts.</p>
+                </section>
+                <section>
+                  <h3>Content highlights</h3>
+                  <p>Includes an inter-house sports announcement, mid-term break dates, and SSS 3 mock exam information, with the timetable referenced on the news page.</p>
+                </section>
+                <section>
+                  <h3>Implementation</h3>
+                  <p>Built with HTML, CSS, Bootstrap 5, and JavaScript.</p>
+                </section>
+                <section>
+                  <h3>Prototype note</h3>
+                  <p>Demonstration only: the project identifies its names and figures as sample data, and portal, form, and payment interactions are not connected to verified live school services.</p>
+                </section>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://brainbox928-boop.github.io/School-website-proposal/" class="btn btn-accent" target="_blank" rel="noopener noreferrer">View Live Project</a>
+                <a href="contact.html#contact" class="btn btn-outline-light">Contact me about this project</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="featured-case-study" id="northline-finance-case-study" aria-labelledby="northline-finance-title">
           <div class="row g-4 align-items-start">
             <div class="col-lg-5">
@@ -55,7 +118,7 @@
               </div>
             </div>
             <div class="col-lg-7">
-              <p class="section-eyebrow">Featured Case Study</p>
+              <p class="section-eyebrow">Project #2 &middot; Available for purchase</p>
               <h2 class="section-heading mb-3" id="northline-finance-title">Northline Finance</h2>
               <p class="case-study-summary">A front-end prototype for exploring personal and business financing, estimating payments, and walking through an application flow.</p>
 
@@ -88,11 +151,20 @@
           </div>
         </section>
 
-        <div class="row g-4">
+        <div class="project-gallery-heading" id="project-gallery">
+          <div>
+            <p class="section-eyebrow">The collection</p>
+            <h2 class="section-heading mb-2">Find a project for your business</h2>
+            <p class="text-body-secondary mb-0">Browse all currently showcased projects. Each project is available to purchase and modify.</p>
+          </div>
+          <a href="contact.html#contact" class="btn btn-outline-light">Discuss a project <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i></a>
+        </div>
+        <div class="row g-4 project-card-grid">
           <div class="col-md-6 col-lg-4">
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Mobile-Car-Detailing-1.jpg" class="card-img-top" alt="Mobile Car Detailing project screenshot 1"><img src="Image/Mobile-Car-Detailing-2.jpg" class="card-img-top" alt="Mobile Car Detailing project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #1</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">Mobile Car Detailing</h2>
                 <p class="card-text text-body-secondary project-description">Responsive service pages and an interactive appointment configuration flow with vehicle and add-on estimates.</p>
                 <details class="project-case-study">
@@ -112,9 +184,10 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Loan-website-1.jpg" class="card-img-top" alt="Loan website project screenshot 1"><img src="Image/Loan-website-2.jpg" class="card-img-top" alt="Loan website project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #2</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">Northline Finance</h2>
                 <p class="card-text text-body-secondary project-description">A financing prototype with personal and business pathways, payment estimates, and application/status screens.</p>
-                <div class="mt-auto"><a href="#northline-finance-case-study" class="btn btn-sm btn-accent w-100">Read Featured Case Study</a></div>
+                <div class="mt-auto"><a href="#northline-finance-case-study" class="btn btn-sm btn-accent w-100">Read Project Case Study</a></div>
               </div>
             </article>
           </div>
@@ -122,6 +195,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Barbershops-Hair-Salons-1.jpg" class="card-img-top" alt="Barbershop and salon project screenshot 1"><img src="Image/Barbershops-Hair-Salons-2.jpg" class="card-img-top" alt="Barbershop and salon project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #3</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">The Gilded Blade</h2>
                 <p class="card-text text-body-secondary project-description">A grooming-services site with category tabs and a multi-step appointment-to-checkout prototype.</p>
                 <details class="project-case-study">
@@ -141,6 +215,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/School-website-1.jpg" class="card-img-top" alt="School website project screenshot 1"><img src="Image/School-website-2.jpg" class="card-img-top" alt="School website project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #4</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">Greenfield Comprehensive School</h2>
                 <p class="card-text text-body-secondary project-description">A multi-page school information experience spanning academics, admissions, news, and role-specific portal pages.</p>
                 <details class="project-case-study">
@@ -160,6 +235,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Car-wrap-advert-1.jpg" class="card-img-top" alt="RouteWave advertising project screenshot 1"><img src="Image/Car-wrap-advert-2.jpg" class="card-img-top" alt="RouteWave advertising project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #5</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">RouteWave Advertising</h2>
                 <p class="card-text text-body-secondary project-description">A campaign information and participant-registration prototype for a vehicle advertising concept.</p>
                 <details class="project-case-study">
@@ -179,6 +255,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Spas-Massage-Therapists-1.jpg" class="card-img-top" alt="Spa and massage project screenshot 1"><img src="Image/Spas-Massage-Therapists-2.jpg" class="card-img-top" alt="Spa and massage project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #6</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">SereneHaven Wellness</h2>
                 <p class="card-text text-body-secondary project-description">A wellness site pairing treatment discovery and therapist information with an appointment interface and self-care guides.</p>
                 <details class="project-case-study">
@@ -198,6 +275,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/nail-tech-lash-arts-1.jpg" class="card-img-top" alt="Nail and lash project screenshot 1"><img src="Image/nail-tech-lash-arts-2.jpg" class="card-img-top" alt="Nail and lash project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #7</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">Velour Atelier</h2>
                 <p class="card-text text-body-secondary project-description">A nail and lash studio site with a service menu and appointment-request modal.</p>
                 <details class="project-case-study">
@@ -217,6 +295,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Tattoo-Piercing-Studios-1.jpg" class="card-img-top" alt="Tattoo and piercing project screenshot 1"><img src="Image/Tattoo-Piercing-Studios-2.jpg" class="card-img-top" alt="Tattoo and piercing project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #8</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">Ink &amp; Steel Studio</h2>
                 <p class="card-text text-body-secondary project-description">A tattoo and piercing studio prototype combining a work gallery, service catalog, aftercare shop, and booking flow.</p>
                 <details class="project-case-study">
@@ -236,6 +315,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/Personal-Trainers-Gyms-1.jpg" class="card-img-top" alt="Fitness project screenshot 1"><img src="Image/Personal-Trainers-Gyms-2.jpg" class="card-img-top" alt="Fitness project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #9</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">FitLife Studio</h2>
                 <p class="card-text text-body-secondary project-description">A fitness site connecting trainer discovery, gym services, and equipment-free home workout content.</p>
                 <details class="project-case-study">
@@ -255,6 +335,7 @@
             <article class="card project-card h-100">
               <div class="project-image-strip"><img src="Image/House-Cleaning-Services-1.jpg" class="card-img-top" alt="House cleaning project screenshot 1"><img src="Image/House-Cleaning-Services-2.jpg" class="card-img-top" alt="House cleaning project screenshot 2"></div>
               <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #10</span><span>Available for purchase</span></p>
                 <h2 class="card-title h5">Brightwell Home Care</h2>
                 <p class="card-text text-body-secondary project-description">A home-cleaning service site with configurable quotes based on service, home details, frequency, and extras.</p>
                 <details class="project-case-study">
@@ -267,6 +348,34 @@
                   </dl>
                 </details>
                 <div class="mt-auto pt-3"><a href="https://brainbox928-boop.github.io/House-Cleaning-Services/" class="btn btn-sm btn-accent w-100" target="_blank" rel="noopener noreferrer">View Live Demo</a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <div class="project-image-strip">
+                <img src="Image/charity 1.jpg" class="card-img-top" alt="Charity website project screenshot 1">
+                <img src="Image/charity 2.jpg" class="card-img-top" alt="Charity website project screenshot 2">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #11</span><span>Available for purchase</span></p>
+                <h2 class="card-title h5">Charity Website</h2>
+                <p class="card-text text-body-secondary project-description">A charity-focused website with a dedicated online presence for sharing the organization and its work.</p>
+                <div class="mt-auto pt-3"><a href="https://brainbox928-boop.github.io/Charity/" class="btn btn-sm btn-accent w-100" target="_blank" rel="noopener noreferrer">View Live Project</a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <div class="project-image-strip">
+                <img src="Image/School-website-proposal-1.jpg" class="card-img-top" alt="Lagoon Crest Schools proposal screenshot 1">
+                <img src="Image/school-website-proposal-2.jpg" class="card-img-top" alt="Lagoon Crest Schools proposal screenshot 2">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="project-label"><span>Project #12 &middot; Featured</span><span>Available for purchase</span></p>
+                <h2 class="card-title h5">Lagoon Crest Schools</h2>
+                <p class="card-text text-body-secondary project-description">A school website proposal with academic, admissions, results, fees, and news information.</p>
+                <div class="mt-auto pt-3"><a href="#school-website-proposal" class="btn btn-sm btn-accent w-100">View Featured Project</a></div>
               </div>
             </article>
           </div>
