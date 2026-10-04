@@ -317,6 +317,10 @@ a {
   border-bottom: 1px solid var(--slate-800);
 }
 
+.marketplace-title-note {
+  color: var(--slate-300);
+}
+
 .badge-progress {
   background-color: var(--accent-soft);
   color: var(--accent);
