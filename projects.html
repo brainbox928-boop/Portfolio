@@ -41,8 +41,8 @@
         <div class="row align-items-center g-4 g-xl-5">
           <div class="col-lg-7">
             <p class="section-eyebrow"><i class="fa-solid fa-sparkles me-2" aria-hidden="true"></i>Portfolio &middot; Built for business</p>
-            <h1 class="project-page-title mb-3">Ready-to-Deploy <span class="text-gradient">Websites</span></h1>
-            <p class="section-subheading project-page-intro mb-4">Explore practical website concepts for businesses, schools, and organizations. Preview each project, then get in touch to make one yours.</p>
+            <h1 class="project-page-title mb-3">Websites &amp; <span class="text-gradient">Applications</span></h1>
+            <p class="section-subheading project-page-intro mb-4">Explore practical website and application projects for businesses, schools, and organizations. Preview each project, then get in touch to discuss adapting one for your needs.</p>
             <div class="d-flex flex-wrap gap-3 align-items-center">
               <a href="#project-gallery" class="btn btn-accent btn-lg">Explore the projects <i class="fa-solid fa-arrow-down ms-2" aria-hidden="true"></i></a>
               <a href="contact.html#contact" class="project-text-link">Have a project in mind? <span>Let’s talk</span></a>
@@ -58,8 +58,8 @@
               <div class="project-availability-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
               <p class="section-eyebrow mb-2">A growing collection</p>
               <h2 class="h4 mb-3">Projects showcased. More to come.</h2>
-              <p class="mb-3">These are the Projects featured in my portfolio—not the complete collection. Each is a ready-to-deploy website starting point, available for purchase and modification for an interested business or organization.</p>
-              <p class="project-production-note mb-0">Before production use, sample content should be replaced and any required booking, payment, messaging, email, or account services connected and tested.</p>
+              <p class="mb-3">These are the projects featured in my portfolio—not the complete collection. Each can be discussed for purchase or modification for an interested business or organization.</p>
+              <p class="project-production-note mb-0">Before production use, project-specific setup may be needed: replace sample content, configure server hosting and persistent storage, and connect and test any required booking, payment, messaging, email, or account services.</p>
               <a href="contact.html#contact" class="btn btn-sm btn-outline-light mt-4">Contact me to discuss purchasing a project <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i></a>
             </aside>
           </div>
@@ -69,7 +69,49 @@
 
     <section class="section-padding pt-0" id="projects">
       <div class="container">
-        <section class="featured-case-study featured-school-project" id="school-website-proposal" aria-labelledby="school-website-proposal-title">
+        <section class="featured-case-study featured-project-highlight" id="mini-marketplace-case-study" aria-labelledby="mini-marketplace-title">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <div class="project-image-strip case-study-gallery case-study-gallery-three">
+                <img src="Image/mini market place 1.jpg.png" class="card-img-top" alt="Mini Marketplace storefront showing virtual-number, social-account, and social-boosting services">
+                <img src="Image/mini market polace 2.jpg.png" class="card-img-top" alt="Mini Marketplace sign-in and account-registration screens">
+                <img src="Image/mini market polace 3.jpg.png" class="card-img-top" alt="Mini Marketplace home page with storefront navigation and service categories">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <p class="section-eyebrow">Featured Project &middot; #14 Mini Marketplace</p>
+              <h2 class="section-heading mb-3" id="mini-marketplace-title">Mini Marketplace Template</h2>
+              <p class="case-study-summary">A full-stack digital-services marketplace concept for virtual numbers, pre-registered social accounts, and social-media boosting, with account, wallet, ordering, and administration workflows.</p>
+
+              <div class="case-study-details">
+                <section>
+                  <h3>Challenge</h3>
+                  <p>Bring several digital-service categories into one storefront and give customers a consistent path from account creation and wallet funding to order delivery.</p>
+                </section>
+                <section>
+                  <h3>My work and decisions</h3>
+                  <p>Structured the project as a vanilla JavaScript storefront backed by Node.js and Express. The documented flows include password-hashed accounts, rate-limited sign-in, wallet funding, order placement, and an admin workspace.</p>
+                </section>
+                <section>
+                  <h3>Payments and fulfillment</h3>
+                  <p>The project documents Paystack funding with webhook verification and idempotency, plus manual bank-transfer credits. Stocked accounts can be delivered automatically; boosting orders can use an SMM panel, and virtual-number orders are fulfilled by an administrator.</p>
+                </section>
+                <section>
+                  <h3>Technologies</h3>
+                  <p>Node.js 18+, Express, SQLite, and vanilla JavaScript, with bcrypt password hashing and an HTTP-only JWT cookie described in the project documentation.</p>
+                </section>
+              </div>
+
+              <p class="case-study-note"><strong>Deployment note:</strong> The supplied GitHub Pages URL currently displays project documentation, not the running application. Running the app requires a Node.js server, configured secrets and payment credentials, persistent storage, and any required fulfillment-provider integrations. Payment and order flows have not been verified as live.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://brainbox928-boop.github.io/Mini-market-place-1/" class="btn btn-accent" target="_blank" rel="noopener noreferrer">View Project Overview</a>
+                <a href="contact.html#contact" class="btn btn-outline-light">Contact me about this project</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-case-study featured-project-highlight" id="school-website-proposal" aria-labelledby="school-website-proposal-title">
           <div class="row g-4 align-items-start">
             <div class="col-lg-5">
               <div class="project-image-strip case-study-gallery">
@@ -414,6 +456,29 @@
                                     <div><dt>Outcome and limits</dt><dd>A customizable manual-payment page. Payments are confirmed by the owner by hand; there is no automated verification or processing.</dd></div>
                                   </dl>
                                 </details>                <div class="mt-auto pt-3"><a href="https://brainbox928-boop.github.io/Payment-link/" class="btn btn-sm btn-accent w-100" target="_blank" rel="noopener noreferrer">View Live Project</a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <div class="project-image-strip">
+                                <img src="Image/mini market place 1.jpg.png" class="card-img-top" alt="Mini Marketplace storefront service categories screenshot">
+                                <img src="Image/mini market polace 2.jpg.png" class="card-img-top" alt="Mini Marketplace login and sign-up screenshot">
+              </div>
+              <div class="card-body d-flex flex-column">
+                                <p class="project-label"><span>Project #14</span><span>Marketplace template</span></p>
+                                <h2 class="card-title h5">Mini Marketplace Template</h2>
+                                <p class="card-text text-body-secondary project-description">A Node.js and Express storefront concept for virtual numbers, social accounts, and social boosting, with wallet and order-management workflows.</p>
+                                <details class="project-case-study">
+                                  <summary>Read case study</summary>
+                                  <dl>
+                                    <div><dt>Challenge</dt><dd>Organize several digital-service categories and their customer account, funding, and fulfillment journeys within one marketplace.</dd></div>
+                                    <div><dt>My work and decisions</dt><dd>Designed a JavaScript storefront and documented a Node.js, Express, and SQLite backend with account, wallet, order, and admin workflows.</dd></div>
+                                    <div><dt>Technologies</dt><dd>Node.js, Express, SQLite, vanilla JavaScript, bcrypt, and HTTP-only JWT cookies.</dd></div>
+                                    <div><dt>Outcome and limits</dt><dd>The supplied GitHub Pages URL currently serves setup documentation, not the running app. Production use needs server hosting, configured credentials, persistent storage, and payment/fulfillment integrations.</dd></div>
+                                  </dl>
+                                </details>
+                                <div class="mt-auto pt-3"><a href="#mini-marketplace-case-study" class="btn btn-sm btn-accent w-100">View Project Case Study</a></div>
               </div>
             </article>
           </div>
